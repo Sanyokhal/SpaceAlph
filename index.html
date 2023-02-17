@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SpaceAlpha</title>
+    <link rel="shortcut icon" href="images/png/shuttle.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="closeMenu()">
+    <div class="wrapper">
+        <div class="menu">
+            <a id="site_name" class="open_button">SpaceAlpha</a>
+            <nav>
+                <a href="#news">Новини</a>
+                <a href="#spaceAlpha">SpaceAlpha</a>
+                <a href="#facts">Цікавинки</a>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="video_background">
+                <video src="video/video.mp4" autoplay muted loop></video>
+            </div>
+            <div class="content">
+                <h3>Теж полюбляєш космос ?<br> Якщо так, то ти потрапив<br> в правильне місце </h3>
+                <div class="button" onclick='window.scrollTo({learnMore, behavior:"smooth"})'>
+                    <a href="#spaceAlpha">Дізнатися більше</a>
+                </div>
+            </div>
+        </div>
+        <div class="news" id="news">
+            <h6>Новини</h6>
+            <div class="content">
+                <div class="news_video">
+                    <iframe src="https://www.youtube.com/embed/A0FZIwabctw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="tiles">
+                    <a href="news1.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                    <a href="news2.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                    <a href="news3.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                    <a href="news4.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="space_alpha" id="spaceAlpha">
+            <h6>SpaceAlpha</h6>
+            <div class="content">
+                <div class="news_video">
+                    <iframe src="https://www.youtube.com/embed/A0FZIwabctw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="tiles">
+                    <a href="SA1.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                    <a href="SA2.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                    <a href="SA3.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                    <a href="SA4.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="interest_facts" id="facts">
+            <h6>Цікаві факти</h6>
+            <div class="content">
+                <div class="news_video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/A0FZIwabctw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="tiles">
+                    <a href="facts1.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                    <a href="facts2.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                    <a href="facts3.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                    <a href="facts4.html" class="news_tile">
+                        <h3>Тестовий запуск SN8</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" id="social_media">
+            <h2>Підписуйтесь щоб слідкувати за новинами</h2>
+            <div class="mailLeave">
+                <input type="text" placeholder="Електрона адреса" id="emailHolder">
+                <div class="button">
+                    <a href="#"><img src="images/svg/email.svg" alt="send"></a>
+                </div>
+            </div>
+            <h2>Ми в соціальних мережах</h2>
+            <div class="social_media">
+                <a href="https://twitter.com/elonmusk?s=20"><img src="images/svg/twitter.svg" alt=""></a>
+                <a href="https://www.youtube.com/user/spacexchannel"><img src="images/svg/youtube.svg" alt=""></a>
+                <a href="https://www.instagram.com/spacex/?hl=uk"><img src="images/svg/instagram.svg" alt=""></a>
+                <a href="https://www.facebook.com/profile.php?id=100032166227443"><img src="images/svg/facebook.svg" alt=""></a>
+            </div>
+            <h5 id="mark">Site designed and made by Sasha Hal</h5>
+        </div>
+    </div>
+    <div class="full_menu">
+        <img class="close_button" src="images/svg/close.svg" alt="close" onclick="closeMenu()">
+        <nav>
+            <a href="#news" onclick="closeMenu()">Новини</a>
+            <a href="#spaceAlpha" onclick="closeMenu()">SpaceAlpha</a>
+            <a href="#facts" onclick="closeMenu()">Цікаві факти</a>
+            <a href="#social_media" onclick="closeMenu()">Cоціальні мережі</a>
+        </nav>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
